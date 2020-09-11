@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -8,28 +10,29 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta charset="utf-8">
   <title>Ejiro Elum - UX/UI / Frontend developer /Environmental Scientist</title>
+  <link rel="stylesheet" type="text/css" href="norma.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
+  <header id="header">
+    <nav>
     <div>
-      <img src="./Home/logo2.png" alt="Logo" width="130" height="30">
-      <nav>
+        <img id="logo" src="./Home/logo2.png" alt="Logo" width="130" height="30">
         <ul>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./234expert.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      </nav>
+        <li><a id="a" href="./about.html">About</a></li>
+        <li><a id="a"href="./234expert.html">Projects</a></li>
+        <li><a id="a"href="#contact">Contact</a></li>
+        </ul>
     </div>
+    </nav>
   </header>
   <main>
     <div>
-      <div style="background-color:blue;color:white;padding:20px;">
+      <div>
         <center>
           <h1>Home Page</h1>
-          <p>I am an environmental scientist and UX professional.<br><span style="color:yellow">Creating designs that will make complex tasks less cumbersome to achieve is my goal. Here are some completed and ongoing projects
+          <p>I am an environmental scientist and UX professional.<br><span style="color:black">Creating designs that will make complex tasks less cumbersome to achieve is my goal. Here are some completed and ongoing projects
             </span>
           </p>
         </center>
@@ -37,9 +40,7 @@
     </div>
     <div>
       <div>
-        <center>
-          <h2>My Work</h2>
-        </center>
+        <h2>My Work</h2>
         <div>
           <div class="column">
             <center>
@@ -55,7 +56,7 @@
             <p>Users need a way to seek the help of an expert whenever confronted with a problem easily and quickly, without much hassle of navigating through several pages before achieving this.
               Competitor’s analysis was done to get a clear picture of the problem statement and potential opportunities that exist towards getting a solution, followed by surveys and interviews. User personas and site map were created. Lastly there
               was the design, prototyping and testing stages
-              Skills and Tools: Basic html, CSS and JS; Adobe CC, Optima sort, usabilityhub and balsamiq. <a href="./234expert.html">Read more here</a>
+              Skills and Tools: Basic html, CSS and JS; Adobe CC, Optima sort, usabilityhub and balsamiq. <a id="a"href="234expert.html">Read more here</a>
             </p>
           </div>
         </div>
@@ -66,7 +67,7 @@
       <h3>Xzyme</h3>
       <p>This project is ongoing, and it is focused on simulating the biological process in laccase enzyme extraction from a fungus.
         The standard operating procedure for the extraction of an enzyme is modeled and virtualized based on the use of known quantities of materials.
-        Skills and Tools: HTML, CSS, and JS, Optima sort, Usabilityhub, balsamiq and Adobe CC. <a href="Project2.html">Read more here</a>
+        Skills and Tools: HTML, CSS, and JS, Optima sort, Usabilityhub, balsamiq and Adobe CC. <a id="a"href="Project2.html">Read more here</a>
       </p>
     </div><br>
     <br>
@@ -75,21 +76,23 @@
       <div>
         <center>
           <h3>Contact me</h3>
-          <p>Contact me for projects; collaboration and new jobs undertakings: <a href="ejelum@gmail.com">email</a> <a href="+490234567">phone</a>
+          <p>Contact me for projects; collaboration and new jobs undertakings: <a href="ejelum@gmail.com" class="button contact">email</a>
+            <a href="+490234567" class="button contact">phone</a>
           </p>
         </center>
       </div>
       <br>
       <div>
-        <center><a href="linkedIn" target="_blank">
+        <center><a href="linkedIn" target="_blank" class="button">
             <img src="./Home/linkedin.svg" alt="linkedIn">
           </a>
-          <a href="twitter" target="_blank">
+          <a href="twitter" target="_blank"class="button">
             <img src="./Home/twitter.svg" alt="Twitter">
           </a>
-          <a href="facebook" target="_blank">
+          <a href="facebook" target="_blank"class="button">
             <img src="./Home/facebook.svg" alt="Facebook">
-          <a href="instagram" target="_blank">
+          </a>
+          <a href="instagram" target="_blank"class="button">
               <img src="./Home/instagram.svg" alt="Instagram">
           </a>
         </center>
