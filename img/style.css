@@ -32,10 +32,10 @@ h3 {
   color: red;
 }
 a:active{
-  color: purple
+  color: purple;
 }
 a:visited{
-  color: brown
+  color: brown;
 }
 #logo {
   width: 130px;
@@ -43,11 +43,14 @@ a:visited{
 }
 #header {
     background-color: #3b7aed;
-    line-height: 1.4;
+    line-height: 1.6;
+    padding: 15px;
 }
 #contact {
   background-color: #3b7aed;
-  line-height: 1.0;
+  color: #0a0a0a;
+  line-height: 0.5;
+  padding: 20px;
 }
 img {
   width: 100%;
@@ -59,19 +62,20 @@ img {
   border-radius: 3px;
   border-bottom: 2px solid;
   color: white;
-  background-color: Black;
+  background-color: white;
   transition: 0.2s opacity;
 }
 .button.hover {
   opacity: 0.8s;
 }
 .button.contact {
-background-color: transparent;
-color: red;
+  padding: 8px;
+background-color: white;
+color: blue;
 text-transform: uppercase;
 border: 2px solid gray;
 }
 .button.contact:hover {
 background-color: grey;
-color: white;
+color: #fbf5f7;
 }
