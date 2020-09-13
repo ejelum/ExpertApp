@@ -9,6 +9,9 @@ body {
 header #a {
   color: white;
   hover: black;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 h1 {
   font-size: 2.75em;
@@ -42,15 +45,21 @@ a:visited{
   height: auto;
 }
 #header {
+  display: inline-block;
     background-color: #3b7aed;
     line-height: 1.6;
-    padding: 15px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
 }
 #contact {
+  display: block;
   background-color: #3b7aed;
   color: #0a0a0a;
   line-height: 0.5;
-  padding: 20px;
+  padding: 20px 0;
+  width: 100%;
 }
 img {
   width: 100%;
@@ -78,4 +87,32 @@ border: 2px solid gray;
 .button.contact:hover {
 background-color: grey;
 color: #fbf5f7;
+}
+/*layout styling*/
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /*25 px top and bottom, 0 px left and right*/
+}
+#work.row {
+  padding-bottom: 25px; border-bottom: 1px solid gray;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+#Home, #About, #Project {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
