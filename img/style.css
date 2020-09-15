@@ -3,7 +3,7 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
   font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 3.0; /* Sets the line-height to 1.6 * the font-size */
+  line-height: 2.0; /* Sets the line-height to 1.6 * the font-size */
   color: #0a0a0a;
 }
 header #a {
@@ -54,12 +54,15 @@ a:visited{
     position: fixed;
 }
 #contact {
-  display: block;
+  display: inline-block;
   background-color: #3b7aed;
   color: #0a0a0a;
   line-height: 0.5;
   padding: 20px 0;
   width: 100%;
+}
+#contact span {
+  display: inline-block;
 }
 img {
   width: 100%;
@@ -111,8 +114,13 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
-#Home, #About {
-  padding: 20px 0;
+#Home {
+  padding: 99px 0;
+  display: inline-block;
+  width: 100%;
+}
+#About {
+  padding: 99px 0;
   display: inline-block;
   width: 100%;
 }
@@ -120,4 +128,72 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+.skills {
+  font-size: 16;
+  font-weight: normal;
+}
+/*medium devices 640px or greater*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 10px 0 15px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  #Home {
+    padding: 99px 0;
+  }
+  #About h2 {
+    margin-top: 0;
+  }
+  #Project {
+    padding: 99px 0;
+  }
+  #Home span {
+    display: block;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px auto;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+/*medium devices 1024px or greater*/
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 10px 0 15px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-7 {
+    width: 41.66%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px auto;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}/*medium devices 1440px or greater*/
+@media only screen and (min-width: 1440px) {
 }
