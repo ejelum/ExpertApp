@@ -8,6 +8,7 @@ body {
 }
 header #a {
   color: white;
+  text-decoration: none;
   hover: black;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -33,6 +34,7 @@ h3 {
 }
 #a:hover {
   color: red;
+  background-color: black;
 }
 a:active{
   color: purple;
@@ -73,22 +75,24 @@ img {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid;
+  text-decoration: none;
   color: white;
   background-color: white;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .button.hover {
   opacity: 0.8s;
 }
 .button.contact {
   padding: 8px;
-background-color: white;
-color: blue;
+background-color: #696969;
+color: #ffffff;
 text-transform: uppercase;
 border: 2px solid gray;
 }
 .button.contact:hover {
-background-color: grey;
+background-color: #168294;
 color: #fbf5f7;
 }
 /*layout styling*/
@@ -180,10 +184,10 @@ nav > ul > li > a {
     float: right;
     margin-top: 4px;
   }
-  .col-md-7 {
+  .col-lg-7 {
     width: 58.33%;
   }
-  .col-md-7 {
+  .col-lg-5 {
     width: 41.66%;
   }
   [class*="col-"] {
@@ -194,6 +198,13 @@ nav > ul > li > a {
   content: "";
   clear: both;
   display: table;
-}/*medium devices 1440px or greater*/
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+/*medium devices 1440px or greater*/
 @media only screen and (min-width: 1440px) {
 }
