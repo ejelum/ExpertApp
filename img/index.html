@@ -1,80 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta charset="utf-8">
   <title>Ejiro Elum - UX/UI / Frontend developer /Environmental Scientist</title>
+  <link rel="stylesheet" type="text/css" href="./norma.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/5981365599.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div>
-      <img src="./Home/logo2.png" alt="Logo" width="130" height="30">
-      <nav>
+  <header id="header">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="auto" viewBox="0 0 80 26">
+  <text id="Ejiro_Elum" data-name="Ejiro Elum" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="19">Ejiro Elum</tspan></text>
+</svg>
+      <nav id="nav">
         <ul>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+          <li><a id="a" href="./about.html">About</a></li>
+          <li><a id="a" href="./234expert.html">Projects</a></li>
+          <li><a id="a" href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
       </nav>
+      </div>
     </div>
   </header>
   <main>
-    <div>
-      <div style="background-color:blue;color:white;padding:20px;">
+    <div id="Home" class="container">
+      <div>
+        <br>
         <center>
           <h1>Home Page</h1>
-          <p>I am an environmental scientist and UX professional.<br><span style="color:yellow">Creating designs that will make complex tasks less cumbersome to achieve is my goal. Here are some completed and ongoing projects
+          <p>I am an environmental scientist and UX professional.<br><span style="color:black">Creating designs that will make complex tasks less cumbersome to achieve is my goal. Here are some completed and ongoing projects
             </span>
           </p>
         </center>
       </div>
     </div>
-    <div>
-      <div>
-        <center>
-          <h2>My Work</h2>
-        </center>
-        <div>
-          <div class="column">
-            <center>
-              <picture>
-                <source srcset="./Home/Project_1.png" width="500" height="400" media="max-width:767px">
-                <img src="./Home/Project_1@.png" alt="234xpert" width="1200" height="800">
-              </picture>
-            </center>
-          </div>
-          <br>
-          <div class="column">
-            <h3>234xpert App</h3>
-            <p>Users need a way to seek the help of an expert whenever confronted with a problem easily and quickly, without much hassle of navigating through several pages before achieving this.
-              Competitor’s analysis was done to get a clear picture of the problem statement and potential opportunities that exist towards getting a solution, followed by surveys and interviews. User personas and site map were created. Lastly there
-              was the design, prototyping and testing stages
-              Skills and Tools: Basic html, CSS and JS; Adobe CC, Optima sort, usabilityhub and balsamiq. <a href="Project1.html">Read more here</a>
-<<<<<<< HEAD
-=======
-              Skills and Tools: Basic html, CSS and JS; Adobe CC, Optima sort, usabilityhub and balsamiq. <a id="a" href="234expert.html">Read more here</a>
-            </p>
-          </div>
-        </div>
-        <br>
+    <div id="work">
+      <div class="container">
+        <h2>My Work</h2>
         <div class="row">
           <div class="col-md-6 col-lg-7">
             <img src="./Home/Project_1.png" alt="project1" width="100%">
           </div>
           <div class="col-md-6 col-lg-5">
-            <h3>Xzyme</h3>
-            <p>This project is ongoing, and it is focused on simulating the biological process in laccase enzyme extraction from a fungus.
-              The standard operating procedure for the extraction of an enzyme is modeled and virtualized based on the use of known quantities of materials.
-              Skills and Tools: HTML, CSS, and JS, Optima sort, Usabilityhub, balsamiq and Adobe CC. <a id="a" href="Project2.html">Read more here</a>
+            <h3>234xpert App</h3>
+            <p>Users need a way to seek the help of an expert whenever confronted with a problem easily and quickly, without much hassle of navigating through several pages before achieving this.
+              Competitor’s analysis was done to get a clear picture of the problem statement and potential opportunities that exist towards getting a solution, followed by surveys and interviews. User personas and site map were created. Lastly there
+              was the design, prototyping and testing stages
+              Skills and Tools: Basic html, CSS and JS; Adobe CC, Optima sort, usabilityhub and balsamiq. <a id="a" href="234expert.html">Read more here</a>
             </p>
           </div>
         </div>
+        <br>
         <div class="row">
           <div class="col-md-6 col-lg-7">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" max-width="100%" height="auto" viewBox="0 0 214.333 212.195">
@@ -140,54 +128,11 @@
             <p>This project is ongoing, and it is focused on simulating the biological process in laccase enzyme extraction from a fungus.
               The standard operating procedure for the extraction of an enzyme is modeled and virtualized based on the use of known quantities of materials.
               Skills and Tools: HTML, CSS, and JS, Optima sort, Usabilityhub, balsamiq and Adobe CC. <a id="a" href="Project2.html">Read more here</a>
->>>>>>> ExpertApp_Mod
-=======
->>>>>>> parent of 5feffb1... Update index.html
             </p>
           </div>
         </div>
       </div>
     </div>
-    <br>
-    <div>
-      <h3>Xzyme</h3>
-      <p>This project is ongoing, and it is focused on simulating the biological process in laccase enzyme extraction from a fungus.
-        The standard operating procedure for the extraction of an enzyme is modeled and virtualized based on the use of known quantities of materials.
-        Skills and Tools: HTML, CSS, and JS, Optima sort, Usabilityhub, balsamiq and Adobe CC. <a href="Project2.html">Read more here</a>
-      </p>
-    </div><br>
-    <br>
-    <br>
-    <footer id="contact">
-      <div>
-        <center>
-          <h3>Contact me</h3>
-          <p>Contact me for projects; collaboration and new jobs undertakings: <a href="ejelum@gmail.com">email</a> <a href="+490234567">phone</a>
-          </p>
-        </center>
-      </div>
-      <br>
-      <div>
-        <center><a href="linkedIn" target="_blank">
-            <img src="./Home/linkedin.svg" alt="linkedIn">
-          </a>
-          <a href="twitter" target="_blank">
-            <img src="./Home/twitter.svg" alt="Twitter">
-          </a>
-          <a href="facebook" target="_blank">
-            <img src="./Home/facebook.svg" alt="Facebook">
-          <a href="instagram" target="_blank">
-              <img src="./Home/instagram.svg" alt="Instagram">
-          </a>
-        </center>
-      </div>
-      <div>
-        <center><p>Copyright Ejiro Elum (2020)</p><center>
-      </div>
-    </footer>
-  </main>
-<<<<<<< HEAD
-=======
     <div>
       <footer id="contact">
         <div class="container">
@@ -200,16 +145,16 @@
         </div>
         <br>
         <div>
-          <center><a href="linkedIn" target="_blank" class="button">
+          <center><a href="https://www.linkedin.com/in/ejiro-elum-b65ab42/" target="_blank" class="button">
               <img src="./Home/linkedin.svg" alt="linkedIn">
             </a>
-            <a href="twitter" target="_blank" class="button">
+            <a href="https://twitter.com/ejirogbimgbim" target="_blank" class="button">
               <img src="./Home/twitter.svg" alt="Twitter">
             </a>
-            <a href="facebook" target="_blank" class="button">
+            <a href="https://www.facebook.com/ejiro.elum" target="_blank" class="button">
               <img src="./Home/facebook.svg" alt="Facebook">
             </a>
-            <a href="instagram" target="_blank" class="button">
+            <a href="https://www.instagram.com/therealejiroghene/?hl=en" target="_blank" class="button">
               <img src="./Home/instagram.svg" alt="Instagram">
             </a>
           </center>
@@ -228,8 +173,5 @@
     crossorigin="anonymous"></script>
   <script src="js/script.js">
   </script>
->>>>>>> ExpertApp_Mod
-=======
->>>>>>> parent of 5feffb1... Update index.html
 </body>
 </html>
