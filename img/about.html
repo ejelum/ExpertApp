@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <title>About - Ejiro Elum(UX/UI)</title>
-  </head>
+  <title>Ejiro Elum - UX/UI / Frontend developer /Environmental Scientist</title>
+  <link rel="stylesheet" type="text/css" href="./norma.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/5981365599.js" crossorigin="anonymous"></script>
+</head>
 <body>
-  <header>
-    <div>
-      <a href="./index.html">
-      <img src="./Home/logo2.png" alt="Logo" width="120" height="30">
-      </a>
+  <header id="header">
+    <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+      <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="auto" viewBox="0 0 80 26">
+    <text id="Ejiro_Elum" data-name="Ejiro Elum" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="19">Ejiro Elum</tspan></text>
+  </svg></a>
       <nav>
         <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="./index.html#contact">Contact</a></li>
-      </ul>
+          <li><a id="a" href="./about.html">About</a></li>
+          <li><a id="a" href="./234expert.html">Projects</a></li>
+          <li><a id="a" href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
       </nav>
+      </div>
     </div>
   </header>
   <main>
-  <div>
     <div>
-      <center>
-      <h1>About</h1>
-      </center>
-      <div>
-        <div class="column">
-          <br>
-          <center><img src="./about/pro.png" width="300"height="300"alt="profile_pics"></center>
-          <h2>My Story</h2>
-          <p>I am an environmental scientist, UX/UI designer/ frontend developer with a vast background in life sciences and analytical chemistry. For more than a decade, I have gained extensive knowledge in research and development in the field of remediation technologies, using enzymes from biological materials. The drive to solve complex things in small simpler steps informed my transitioning into the user experience field. I want to create systems and user experiences that mimic biological processes.</p>
-          <a href="./files/resume.pdf" download>View My Resume</a>
-        </div>
-          <div class="column">
-          <h2>Skills and Tools</h2>
-          <h3>Skills</h3>
+      <div id="About" class="container">
+        <center>
+          <h1>About</h1>
+        </center>
+        <div>
+          <center>
+          <picture>
+              <source srcset="./about/pro.png" media="(max-width:767px)">
+              <img src="./about/pro.png" alt="Ejiro">
+            </picture>
+        </center>
+        <div class="container">
+        <div class="row">
+              <div class="col-md-6 col-lg-7">
+              <h2>My Story</h2>
+              <p>I am an environmental scientist, UX/UI designer/ frontend developer with a vast background in life sciences and analytical chemistry. For more than a decade, I have gained extensive knowledge in research and development in the field
+                of remediation technologies, using enzymes from biological materials. The drive to solve complex things in small simpler steps informed my transitioning into the user experience field. I want to create systems and user experiences
+                that mimic biological processes.</p>
+              <a href="./files/resume.pdf" download class="button contact hover">View My Resume</a>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <h2>Skills</h2>
             <ul>
               <li>Enzyme Assay Protocols Designs</li>
               <li>HPLC-MS</li>
@@ -52,17 +68,56 @@
               <li>Usability and Preference Testing</li>
               <li>Style Guides</li>
               <li>HTML, CSS and Javascript</li>
-             </ul>
-            </div>
-          <h3>Tools</h3>
-              <ul>
-                <li>Adobe CC</li>
-                <li>Usabilityhub</li>
-                <li>Balsamiq</li>
-                </ul>
+            </ul>
+            <h2>Tools</h2><ul>
+              <li>Adobe CC</li>
+              <li>Usabilityhub</li>
+              <li>Balsamiq</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
+    <footer id="contact">
+      <div class="container">
+        <center>
+          <h3>Contact me</h3>
+          <p>Contact me for projects; collaboration and new jobs undertakings: <a href="ejelum@gmail.com" class="button contact">email</a>
+            <a href="+490234567" class="button contact">phone</a>
+          </p>
+        </center>
+      </div>
+      <br>
+      <div>
+        <center><a href="https://www.linkedin.com/in/ejiro-elum-b65ab42/" target="_blank" class="button">
+            <img src="./Home/linkedin.svg" alt="linkedIn">
+          </a>
+          <a href="https://twitter.com/ejirogbimgbim" target="_blank" class="button">
+            <img src="./Home/twitter.svg" alt="Twitter">
+          </a>
+          <a href="https://www.facebook.com/ejiro.elum" target="_blank" class="button">
+            <img src="./Home/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/therealejiroghene/?hl=en" target="_blank" class="button">
+            <img src="./Home/instagram.svg" alt="Instagram">
+          </a>
+        </center>
+      </div>
+      <div>
+        <center>
+          <p>Copyright Ejiro Elum (2020)</p>
+          <center>
+      </div>
+    </footer>
   </main>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script src="js/script.js">
+  </script>
 </body>
+
 </html>
