@@ -1,4 +1,3 @@
-Book.js
 class Book {
 constructor(
 title,
