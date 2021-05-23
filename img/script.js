@@ -4,8 +4,8 @@ script.js
 *Create a new object type "Book" using a class or an object constructor function
 * add at least 5 book objects
 */
-import Backpack from "Backpack.js";
-import Book from "Book.js";
+getElementsByClassName("Backpack") from "Backpack.js";
+getElementsByClassName('Book') from "Book.js";
 const everydayPack = new Backpack(
 "Everyday Backpack",
 30,
