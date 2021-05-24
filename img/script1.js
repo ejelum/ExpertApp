@@ -18,3 +18,14 @@ false,
 console.log("The everydayPack object:", everydayPack);
 console.log("the pocketNum value:", everydayPack.pocketNum);
 console.log("Days since acquired:", everydayPack.backpackAge);
+
+const ourChance = new Book(
+    "this is our chance",
+    "ejiroelum",
+    12345,
+    1982,
+    54,
+    12,
+    "finished"
+);
+console.log(ourChance);
