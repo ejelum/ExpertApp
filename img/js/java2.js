@@ -1,4 +1,4 @@
-import daughter from "js/java1.js";
+import daughter from "/js/java1.js";
 const anotherdaughter = new daughter (
   "monique",
   2,
