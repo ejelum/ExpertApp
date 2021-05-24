@@ -12,6 +12,7 @@ class Backpack {
     volume,
     color,
     pocketNum,
+    backpackAge,
     strapLengthL,
     strapLengthR,
     lidOpen
@@ -21,6 +22,7 @@ class Backpack {
     this.volume = volume;
     this.color = color;
     this.pocketNum = pocketNum;
+    this.backpackAge = backpackAge;
     this.strapLength = {
       left: strapLengthL,
       right: strapLengthR,
