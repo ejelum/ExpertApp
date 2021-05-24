@@ -9,7 +9,7 @@ class daughter {
     address,
     lidOpen
   ) {
-    this.name = Oghenevovwero;
+    this.name = "Oghenevovwero";
     this.age = 6;
     this.sex = "female";
     this.height = 72;
@@ -24,3 +24,4 @@ toggleLid (lidStatus) {
   this.lidOpen = lidStatus;
 }
 }
+export default daughter;
